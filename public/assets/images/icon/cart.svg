@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+    <g fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g fill-rule="nonzero" stroke="#222" class="cartsvg" stroke-width="1.5">
+            <g>
+                <path d="M4.67 5.333h12.66c.967 0 1.796.692 1.969 1.643l1.939 10.666c.198 1.087-.523 2.128-1.61 2.326-.118.021-.238.032-.358.032H2.73c-1.105 0-2-.895-2-2 0-.12.01-.24.032-.358l1.94-10.666c.172-.951 1-1.643 1.967-1.643z" transform="translate(-1788 -54) translate(1789 55)"/>
+                <path stroke-linecap="round" d="M8 8V3.592C8 2.046 9.343.667 11 .667s3 1.379 3 2.925V8" transform="translate(-1788 -54) translate(1789 55)"/>
+            </g>
+        </g>
+    </g>
+</svg>
