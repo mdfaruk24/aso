@@ -1,6 +1,5 @@
 
 
 {
-    "apiurl": "http://localhost/aura/api/v2/categories/featured"
-
+    "apiurl": "https://demo.activeitzone.com/ecommerce/api/v2/categories" 
 }

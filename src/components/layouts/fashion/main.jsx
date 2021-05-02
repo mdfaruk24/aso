@@ -15,7 +15,7 @@ import {
     svgservice,
     svgoffer
 } from "../../../services/script";
-import Homecat from './homecat';
+import MobiHomeCat from './mobi-home-cat';
 import CollectionBanner from './collection-banner';
 
 
@@ -96,7 +96,7 @@ class Fashion extends Component {
                 {/*Home Section End*/}
                 
                 {/*HomeCat Section Start*/}
-                <Homecat />
+                <MobiHomeCat />
                 {/*HomeCat Section End*/}
                 <CollectionBanner/>
                 {/*collection banner*/}

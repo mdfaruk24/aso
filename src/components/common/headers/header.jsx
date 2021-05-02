@@ -106,12 +106,12 @@ class Header extends Component {
                                     <div className="floornav">
                                         <ul>
                                             <li>
-                                                <Link to={`${process.env.PUBLIC_URL}/category/men`} className="nav-link" activeClassName="active">
+                                                <Link to={`${process.env.PUBLIC_URL}/men`} className="nav-link" activeClassName="active">
                                                     Men
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link to={`${process.env.PUBLIC_URL}/category/women`} className="nav-link" activeClassName="active">
+                                                <Link to={`${process.env.PUBLIC_URL}/women`} className="nav-link" activeClassName="active">
                                                     Women
                                                 </Link>
                                             </li>

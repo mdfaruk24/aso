@@ -299,6 +299,45 @@ export const Slider7 = {
     ]
 }
 
+export const Slider8 = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    responsive: [
+        {
+            breakpoint: 1367,
+            settings: {
+                slidesToShow: 8,
+                slidesToScroll: 8
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        }
+    ]
+}
+
 // export const footerData = function() {
 //     var contentwidth = window.innerWidth;
 //     if ((contentwidth) < 750) {

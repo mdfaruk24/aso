@@ -1929,6 +1929,13 @@ header{
     }
   }
 }
+@media (min-width: 817px) {
+  .floornav {
+      li {
+        width: 115px;
+      }
+  }
+}
 @media (max-width: 768px) {
   .main-menu {
     &.border-section {
@@ -2244,7 +2251,7 @@ header{
         border-left: 1px solid #525050;
       }
       li {
-        width: 115px;
+        width: 91px;
         border-right: 1px solid #525050;
         border-bottom: none;
         box-sizing: border-box;

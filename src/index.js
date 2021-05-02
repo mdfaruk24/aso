@@ -87,6 +87,8 @@ import ElementProductTab from "./components/features/product/element-product-tab
 // Portfolio Features
 import GridCols from "./components/features/portfolio/grid-cols"
 import MasonaryGridCols from "./components/features/portfolio/masonary-grid-cols"
+import MenPage from './components/layouts/fashion/men-page';
+import WomenPage from './components/layouts/fashion/women-page';
 
 
 class Root extends React.Component {
@@ -112,6 +114,9 @@ class Root extends React.Component {
 
                                 {/*Routes For Layouts*/}
                                 <Route exact path={`${process.env.PUBLIC_URL}/`} component={Fashion}/>
+
+                                <Route path={`${process.env.PUBLIC_URL}/men`} component={MenPage}/>
+                                <Route path={`${process.env.PUBLIC_URL}/women`} component={WomenPage}/>
 
 								{/*Routes For Features (Product Collection) */}
 								<Route path={`${process.env.PUBLIC_URL}/category`} component={Category}/>
