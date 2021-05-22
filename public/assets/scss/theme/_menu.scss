@@ -8,7 +8,7 @@
   @for $i from 1 through $level {
     $chain: $chain + $chainable;
     $selector: $selector + ',
-' + $chain + ' a, ' + $chain + '*:not(ul) a, ' + $chain + ' ul';
+' + $chain + ' a, ' + $chain + '*not(ul) a, ' + $chain + ' ul';
   }
   #{$selector} {
     border-radius: 0 0 0 0;
@@ -18,7 +18,7 @@
   @for $i from 1 through $level {
     $chain: $chain + $chainable;
     $selector: $selector + ',
-' + $chain + ' a.highlighted, ' + $chain + '*:not(ul) a.highlighted';
+' + $chain + ' a, ' + $chain + '*not(ul) a';
   }
   #{$selector} {
     border-radius: 0;
@@ -918,7 +918,7 @@ header{
       }
     }
   }
-  .pixelstrap {
+/*   .pixelstrap {
     &.sm-vertical {
       a {
         .sub-arrow {
@@ -927,7 +927,7 @@ header{
         }
       }
     }
-  }
+  } */
   .link-section {
     float: right;
   }
@@ -1932,7 +1932,7 @@ header{
 @media (min-width: 817px) {
   .floornav {
       li {
-        width: 115px;
+        width: 115px !important;
       }
   }
 }
@@ -2302,7 +2302,6 @@ header{
   }
   .main-nav-center {
     .toggle-nav {
-      right: 15px;
       top:-75px;
     }
   }
@@ -2311,10 +2310,15 @@ header{
     bottom: 0;
     left:0;
     height: 60px;
-    background-color: $font-color;
+    background-color: $white;
     width: 100vw;
     z-index: 9;
     box-shadow: 0 2px 5px 0 rgba(168,168,168,1);
+  }
+  .dark {
+    .mobile-fix-option {
+      background-color: $dark-font;
+    }
   }
   .header-5 {
     .top-header {

@@ -79,8 +79,8 @@ class DetailsWithPrice extends Component {
                         {item.size?
                             <div>
                                 <h6 className="product-title size-text">select size
-                                    <span><a href="#" data-toggle="modal"
-                                             data-target="#sizemodal" onClick={this.onOpenModal} >size chart</a></span></h6>
+                                    <span><Link to={'#'} data-toggle="modal"
+                                             data-target="#sizemodal" onClick={this.onOpenModal} >size chart</Link></span></h6>
                                 <div className="modal fade" id="sizemodal" tabIndex="-1"
                                      role="dialog" aria-labelledby="exampleModalLabel"
                                      aria-hidden="true">
@@ -140,10 +140,18 @@ class DetailsWithPrice extends Component {
                         <h6 className="product-title">share it</h6>
                         <div className="product-icon">
                             <ul className="product-social">
-                                <li><a href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="https://plus.google.com/discover" target="_blank"><i className="fa fa-google-plus"></i></a></li>
-                                <li><a href="https://twitter.com/" target="_blank"><i className="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-instagram"></i></a></li>
+                                <li>
+                                    <Link to={'https://www.facebook.com/'} ><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                                </li>
+                                <li>
+                                    <Link to={'https://plus.google.com/'} ><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
+                                </li>
+                                <li>
+                                    <Link to={'https://twitter.com'}><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+                                </li>
+                                <li>
+                                    <Link to={'https://instagram.com'}><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+                                </li>
                             </ul>
                                 <button className="wishlist-btn" onClick={() => addToWishlistClicked(item)}><i
                                     className="fa fa-heart"></i><span
@@ -151,28 +159,7 @@ class DetailsWithPrice extends Component {
                                 </button>
                         </div>
                     </div>
-                    {/*<div className="border-product">
-                        <h6 className="product-title">Time Reminder</h6>
-                        <div className="timer">
-                            <p id="demo">
-                                <span>25
-                                    <span className="padding-l">:</span>
-                                    <span className="timer-cal">Days</span>
-                                </span>
-                                <span>22
-                                    <span className="padding-l">:</span>
-                                    <span className="timer-cal">Hrs</span>
-                                </span>
-                                <span>13
-                                    <span className="padding-l">:</span>
-                                    <span className="timer-cal">Min</span>
-                                </span>
-                                <span>57
-                                    <span className="timer-cal">Sec</span>
-                                </span>
-                            </p>
-                        </div>
-                    </div>*/}
+
                 </div>
                 <Modal open={this.state.open} onClose={this.onCloseModal} center>
                     <div className="modal-dialog modal-dialog-centered" role="document">

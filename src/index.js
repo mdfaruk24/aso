@@ -10,18 +10,10 @@ import './index.scss';
 import store from './store';
 import translations from './constants/translations'
 import { getAllProducts } from './actions'
-import Landing from './components/landing'
 
 
 // Layouts
-import Fashion from './components/layouts/fashion/main';
-import Vegetables from './components/layouts/vegetables/main';
-import Kids from './components/layouts/kids/main';
-import Pets from './components/layouts/pets/main';
-import Furniture from './components/layouts/furniture/main';
-import Watch from './components/layouts/watch/main';
-import Beauty from './components/layouts/beauty/main';
-import Electronic from './components/layouts/electronic/main';
+import Home from './components/layouts/home/main';
 
 
 //Collection Pages
@@ -56,7 +48,7 @@ import aboutUs from './components/pages/about-us'
 import PageNotFound from './components/pages/404'
 import lookbook from './components/pages/lookbook'
 import Login from './components/pages/login'
-import Register from './components/pages/register'
+import Register from '../src/register'
 import Search from './components/pages/search'
 import Collection from './components/pages/collection'
 import ForgetPassword from './components/pages/forget-password'
@@ -87,8 +79,8 @@ import ElementProductTab from "./components/features/product/element-product-tab
 // Portfolio Features
 import GridCols from "./components/features/portfolio/grid-cols"
 import MasonaryGridCols from "./components/features/portfolio/masonary-grid-cols"
-import MenPage from './components/layouts/fashion/men-page';
-import WomenPage from './components/layouts/fashion/women-page';
+import MenPage from './components/layouts/home/men-page';
+import WomenPage from './components/layouts/home/women-page';
 
 
 class Root extends React.Component {
@@ -102,18 +94,10 @@ class Root extends React.Component {
 				<BrowserRouter basename={'/'} >
 					<ScrollContext>
 						<Switch>
-                            <Route path={`${process.env.PUBLIC_URL}/Landing`} component={Landing}/>
-                            <Route path={`${process.env.PUBLIC_URL}/vegetables`} component={Vegetables}/>
-							<Route path={`${process.env.PUBLIC_URL}/electronic`} component={Electronic}/>
-                            <Route path={`${process.env.PUBLIC_URL}/furniture`} component={Furniture}/>
-							<Route path={`${process.env.PUBLIC_URL}/pets`} component={Pets}/>
-							<Route path={`${process.env.PUBLIC_URL}/watch`} component={Watch}/>
-                            <Route path={`${process.env.PUBLIC_URL}/kids`} component={Kids}/>
-                            <Route path={`${process.env.PUBLIC_URL}/beauty`} component={Beauty}/>
                             <Layout>
 
                                 {/*Routes For Layouts*/}
-                                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Fashion}/>
+                                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home}/>
 
                                 <Route path={`${process.env.PUBLIC_URL}/men`} component={MenPage}/>
                                 <Route path={`${process.env.PUBLIC_URL}/women`} component={WomenPage}/>
@@ -157,7 +141,7 @@ class Root extends React.Component {
                                 <Route path={`${process.env.PUBLIC_URL}/pages/collection`} component={Collection}/>
                                 <Route path={`${process.env.PUBLIC_URL}/pages/forget-password`} component={ForgetPassword}/>
                                 <Route path={`${process.env.PUBLIC_URL}/pages/contact`} component={Contact}/>
-                                <Route path={`${process.env.PUBLIC_URL}/pages/dashboard`} component={Dashboard}/>
+                                <Route path={`${process.env.PUBLIC_URL}/dashboard`} component={Dashboard}/>
                                 <Route path={`${process.env.PUBLIC_URL}/pages/faq`} component={Faq}/>
 
 								{/*Features*/}

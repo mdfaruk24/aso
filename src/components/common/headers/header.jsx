@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, NavLink} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import { IntlActions } from 'react-redux-multilingual'
 import Pace from 'react-pace-progress'
 
@@ -12,6 +12,7 @@ import TopBar from "./common/topbar";
 import LogoImage from "./common/logo";
 import {changeCurrency} from '../../../actions'
 import {connect} from "react-redux";
+
 
 class Header extends Component {
 
@@ -105,15 +106,16 @@ class Header extends Component {
                                     </div>
                                     <div className="floornav">
                                         <ul>
+                                        <li><NavLink exact activeClassName="active" className="nav-link" to="/">Home</NavLink></li>
                                             <li>
-                                                <Link to={`${process.env.PUBLIC_URL}/men`} className="nav-link" activeClassName="active">
+                                                <NavLink to={`${process.env.PUBLIC_URL}/men`} className="nav-link" activeClassName="active">
                                                     Men
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link to={`${process.env.PUBLIC_URL}/women`} className="nav-link" activeClassName="active">
+                                                <NavLink to={`${process.env.PUBLIC_URL}/women`} className="nav-link" activeClassName="active">
                                                     Women
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </div>

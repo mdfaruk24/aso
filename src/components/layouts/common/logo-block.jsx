@@ -7,7 +7,7 @@ class LogoBlock extends Component {
 
     render (){
         return (
-            <section className="section-b-space">
+            <section className="pt-3 pb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

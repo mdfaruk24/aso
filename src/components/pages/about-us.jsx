@@ -6,11 +6,6 @@ import {Slider2, Team4} from "../../services/script"
 
 class aboutUs extends Component {
 
-    constructor (props) {
-        super (props)
-
-    }
-
     render (){
 
         var svgFreeShipping = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -117 679.99892 679">\n' +

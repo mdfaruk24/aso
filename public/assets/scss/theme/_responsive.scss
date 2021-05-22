@@ -1680,15 +1680,7 @@
       img {
         padding: 10px 10px 10px 0;
       }
-      > div {
-        .media {
-          &:last-child {
-            img {
-              //margin-bottom: 0;
-            }
-          }
-        }
-      }
+      
     }
     &.card-border {
       .offer-slider {
@@ -2423,8 +2415,13 @@
 }
 
 @media(max-width: 768px) {
+  .dark {
+    header {box-shadow: none;}
+  }
   header {
     background-color: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 8px #ddd;
   }
   &.sticky {
     &.fixed {
@@ -2432,9 +2429,16 @@
     }
   }
 
+  .main-navbar {background: none;}
+
   .search-container {
     display: none;
   }
+  .mobi-home-cat {
+    display: block;
+  }
+
+
   .pet-parallax {
     .pet-decor {
       display: none;

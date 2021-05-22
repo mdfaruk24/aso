@@ -42,7 +42,7 @@
   "stock": 6,
   "new": true,
   "sale": false,
-  "category": "women",
+  "categorys": "women",
   "colors": ["gray", "orange"],
   "size": ["M", "L", "XL"],
   "tags": ["caprese", "puma"],

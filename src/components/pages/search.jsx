@@ -4,10 +4,7 @@ import Breadcrumb from "../common/breadcrumb";
 
 class Search extends Component {
 
-    constructor (props) {
-        super (props)
 
-    }
 
     render (){
 

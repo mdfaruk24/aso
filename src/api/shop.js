@@ -1,6 +1,7 @@
 /**
  * Mocking client-server processing
  */
+
 import _products from './data.json'
 
 

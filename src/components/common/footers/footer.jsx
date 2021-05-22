@@ -24,31 +24,6 @@ class Footer extends Component {
 
         return (
             <footer className="footer-light">
-                <div className="light-layout">
-                    <div className="container">
-                        <section className="small-section border-section border-top-0">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="subscribe">
-                                        <div>
-                                            <h4>KNOW IT ALL FIRST!</h4>
-                                            <p>Never Miss Anything From Aura By Signing Up To Our Newsletter. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <form className="form-inline subscribe-form">
-                                        <div className="form-group mx-sm-3">
-                                            <input type="text" className="form-control" id="exampleFormControlInput1"
-                                                   placeholder="Enter your email"/>
-                                        </div>
-                                        <button type="submit" className="btn btn-solid">subscribe</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
                 <section className="section-b-space light-layout">
                     <div className="container">
                         <div className="row footer-theme partition-f">
@@ -105,11 +80,11 @@ class Footer extends Component {
                                     </div>
                                     <div className="footer-contant">
                                         <ul>
-                                            <li><a href="#">shipping & return</a></li>
-                                            <li><a href="#">secure shopping</a></li>
-                                            <li><a href="#">gallary</a></li>
-                                            <li><a href="#">affiliates</a></li>
-                                            <li><a href="#">contacts</a></li>
+                                            <li><Link to={`${process.env.PUBLIC_URL}/#`} >shipping & return</Link></li>
+                                            <li><Link to={`${process.env.PUBLIC_URL}/#`} >secure shopping</Link></li>
+                                            <li><Link to={`${process.env.PUBLIC_URL}/#`} >gallary</Link></li>
+                                            <li><Link to={`${process.env.PUBLIC_URL}/#`} >affiliates</Link></li>
+                                            <li><Link to={`${process.env.PUBLIC_URL}/#`} >contacts</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -125,8 +100,7 @@ class Footer extends Component {
                                                 345-659
                                             </li>
                                             <li><i className="fa fa-phone"></i>Call Us: 123-456-7898</li>
-                                            <li><i className="fa fa-envelope-o"></i>Email Us: <a
-                                                href="#">support@aurashoponl.com</a></li>
+                                            <li><i className="fa fa-envelope-o"></i>Email Us: <Link to={`${process.env.PUBLIC_URL}/#`} >support@aurashoponl.com</Link></li>
                                             <li><i className="fa fa-fax"></i>Fax: 123456</li>
                                         </ul>
                                     </div>
@@ -147,19 +121,19 @@ class Footer extends Component {
                                 <div className="payment-card-bottom">
                                     <ul>
                                         <li>
-                                            <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/visa.png`} alt="" /></a>
+                                            <Link to={`${process.env.PUBLIC_URL}/#`} ><img src={`${process.env.PUBLIC_URL}/assets/images/icon/visa.png`} alt="" /></Link>
                                         </li>
                                         <li>
-                                            <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/mastercard.png`} alt="" /></a>
+                                            <Link to={`${process.env.PUBLIC_URL}/#`} ><img src={`${process.env.PUBLIC_URL}/assets/images/icon/mastercard.png`} alt="" /></Link>
                                         </li>
                                         <li>
-                                            <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/paypal.png`} alt="" /></a>
+                                            <Link to={`${process.env.PUBLIC_URL}/#`} ><img src={`${process.env.PUBLIC_URL}/assets/images/icon/paypal.png`} alt="" /></Link>
                                         </li>
                                         <li>
-                                            <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/american-express.png`} alt="" /></a>
+                                            <Link to={`${process.env.PUBLIC_URL}/#`} ><img src={`${process.env.PUBLIC_URL}/assets/images/icon/american-express.png`} alt="" /></Link>
                                         </li>
                                         <li>
-                                            <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/discover.png`} alt="" /></a>
+                                            <Link to={`${process.env.PUBLIC_URL}/#`} ><img src={`${process.env.PUBLIC_URL}/assets/images/icon/discover.png`} alt="" /></Link>
                                         </li>
                                     </ul>
                                 </div>

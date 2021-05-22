@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Slider from 'react-slick';
 import '../common/index.scss';
 import {connect} from "react-redux";
+import { Link} from 'react-router-dom';
 
 
 // import custom Components
@@ -85,10 +86,18 @@ class Column extends Component {
                                             </div>
                                             <div className="product-icon mb-3">
                                                 <ul className="product-social">
-                                                    <li><a href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                                                    <li><a href="https://plus.google.com/discover" target="_blank"><i className="fa fa-google-plus"></i></a></li>
-                                                    <li><a href="https://twitter.com/" target="_blank"><i className="fa fa-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-instagram"></i></a></li>
+                                                    <li>
+                                                        <Link to={'https://www.facebook.com/'} ><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to={'https://plus.google.com/'} ><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to={'https://twitter.com'}><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to={'https://instagram.com'}><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+                                                    </li>
                                                 </ul>
                                                 <button className="wishlist-btn" onClick={() => addToWishlist(item)}>
                                                     <i className="fa fa-heart"></i><span className="title-font">Add To WishList</span>

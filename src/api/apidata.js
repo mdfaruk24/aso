@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Backendurl from '../api/backendurl.json'
+import Backendurl from '../api/urldata.json';
 
 
 
@@ -11,8 +11,10 @@ export default class Apidata extends Component {
             isLoaded: false
         }
     }
+
+
     componentDidMount() {
-        fetch('http://localhost/aura/api/v2/categories/featured')
+        fetch('http://localhost/aura/api/v1/products')
             .then(res => res.json())
             .then(json => {
                 this.setState({
@@ -21,6 +23,8 @@ export default class Apidata extends Component {
                 })
             });
     }
+
+
     render() {
         var { isLoaded, items } = this.state;
         if (!isLoaded) {
@@ -33,6 +37,8 @@ export default class Apidata extends Component {
                     {items.map(item => (
                         <li key="{item.id}">
                             {item.name}
+                            {item.category}
+                            {item.category}
                             <img src={`${Backendurl.BACKENDURL}${item.banner}`} className="img-fluid" alt=""/>                 
                         </li> 
                     ))}
