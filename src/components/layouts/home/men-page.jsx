@@ -124,6 +124,32 @@ class MenPage extends Component {
                                     </div>
                                 </Link>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                {/*collection banner end*/}
+
+                {/*Parallax banner*/}
+                <section className="p-0">
+                    <div className="full-banner parallax-banner5 parallax text-center p-left">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col">
+                                    <div className="banner-contain">
+                                        <h2>2021</h2>
+                                        <h3>fashion trends</h3>
+                                        <h4>special offer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/*Parallax banner End*/}
+
+                <section className="pb-0">
+                    <div className="container">
+                        <div className="row partition2">
                             <div className="col-md-4 pb-5">
                                 <Link to={`${process.env.PUBLIC_URL}/left-sidebar/collection`}>
                                     <div className="collection-banner p-right text-center">
@@ -148,29 +174,6 @@ class MenPage extends Component {
                         </div>
                     </div>
                 </section>
-                {/*collection banner end*/}
-
-                <TopCollection type={'women'} />
-
-                {/*Parallax banner*/}
-                <section className="p-0">
-                    <div className="full-banner parallax-banner5 parallax text-center p-left">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col">
-                                    <div className="banner-contain">
-                                        <h2>2021</h2>
-                                        <h3>fashion trends</h3>
-                                        <h4>special offer</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/*Parallax banner End*/}
-
-                <SpecialProducts />
 
                 {/*service layout*/}
                 <div className="container">
